@@ -16,9 +16,8 @@
     &__wrapper {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 1fr;
-        grid-auto-rows: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-auto-flow: dense;
         gap: 13px;
     }
     &__item {
@@ -38,13 +37,12 @@
     &__progress {
         padding-top: 120px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 14px;
-        grid-auto-rows: 1fr 14px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-auto-flow: dense;
         gap: 30px 45px;
         &__item {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 330px 20px;
             grid-template-rows: 1fr 14px;
             &-title {
                 position: relative;
@@ -65,6 +63,7 @@
                 line-height: 21px;
             }
             &-rectangle {
+                grid-row: 2/3;
                 grid-column: 1/3;
                 width: 350px;
                 height: 14px;
