@@ -1,0 +1,80 @@
+.skills {
+    margin-top: 126px;
+    min-height: 1024px;
+    .title {
+        text-align: center;
+    }
+    &__title {
+        position: relative;
+        @include before_circle;
+        &:before {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+        gap: 13px;
+    }
+    &__item {
+        border: 1px solid #000000;
+        padding: 30px 30px 25px;
+        &-title {
+            padding-top: 20px;
+            margin-bottom: 0;
+        }
+        &-descr {
+            padding-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__progress {
+        padding-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 14px;
+        grid-auto-rows: 1fr 14px;
+        gap: 30px 45px;
+        &__item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 14px;
+            &-title {
+                position: relative;
+                padding: 6px 0 0 13px;
+                margin-bottom: 27px;
+                font-weight: 700;
+                @include before_circle;
+                &:before {
+                    position: absolute;
+                    top: -1px;
+                    left: 1px;
+                }
+            }
+            &-procent {
+                justify-self: end;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &-rectangle {
+                grid-column: 1/3;
+                width: 350px;
+                height: 14px;
+                background: #E8E4DE;
+                border-radius: 4px;
+                .sub {
+                    background: #FFA501;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
