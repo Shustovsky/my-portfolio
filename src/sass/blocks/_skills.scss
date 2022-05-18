@@ -1,18 +1,6 @@
 .skills {
     margin-top: 126px;
     min-height: 1024px;
-    .title {
-        text-align: center;
-    }
-    &__title {
-        position: relative;
-        @include before_circle;
-        &:before {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-        }
-    }
     &__wrapper {
         margin-top: 60px;
         display: grid;
