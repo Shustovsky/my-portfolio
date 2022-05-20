@@ -1,0 +1,137 @@
+@media(max-width:1300px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media(max-width:1200px) {
+    .sidepanel {
+        display: none;
+    }
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 40%/cover;
+        &__title {
+            font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+        }
+    }
+    .about {
+        &__subtitle {
+            font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+            line-height: calc(34px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+        }
+        &__wrapper {
+            gap: 20px 35px;
+        }
+        &__skills {
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            &-item {
+                grid-template-columns: 40px auto;
+            }
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        max-width: 720px;
+    }
+    .about {
+        &__skills {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 20px 20px 0 20px;
+        }
+    }
+    .skills {
+        &__progress {
+            padding-top: 80px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .container {
+        max-width: 540px;
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        &__progress {
+            padding-top: 50px;
+            justify-items: center;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .menu__block {
+        width: 250px;
+        padding-left: 20px;
+    }
+    .promo {
+        &__btns {
+            max-width: 150px;
+            a {
+                margin-top: 10px;
+            }
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+    }
+    .resume {
+        padding-top: 50px;
+        &__wrapper {
+            padding: 0;
+        }
+        .resume {
+            &__column-title {
+                margin-top: 40px;
+            }
+        }
+    }
+    .title {
+        &_fs36 {
+            font-size: 24px;
+        }
+        &__section-subtitle {
+            line-height: 36px;
+        }
+    }
+    .skills {
+        margin-top: 40px;
+        &__item {
+            padding: 40px 30px 25px;
+        }
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__progress {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            &__item {
+                grid-template-columns: minmax(200px, 1fr) 20px;
+                &-rectangle {
+                    max-width: 90%;
+                }
+            }
+            /*  justify-items: center; */
+        }
+    }
+}

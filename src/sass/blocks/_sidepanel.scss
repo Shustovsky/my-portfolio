@@ -1,9 +1,8 @@
 .sidepanel {
     position: fixed;
     top: 100px;
-    left: 50px;
-    display: none;
-    /* !!!!!!!!обязательно потом поменять на FLEX!!!!!! убрал чтобы не мешало */
+    left: 10px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
