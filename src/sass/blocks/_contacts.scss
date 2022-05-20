@@ -1,0 +1,97 @@
+.contacts {
+    padding: 120px 0 90px 0;
+    &__wrapper {
+        padding: 0 35px 0 50px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 25px 50px;
+        justify-content: space-between;
+    }
+    &__photo {
+        grid-row: span 2;
+        img {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__descr {
+        padding-top: 6px;
+        .divider {
+            margin: 0;
+        }
+    }
+    &__title {
+        position: relative;
+        padding: 1px 0 0 12px;
+        @include before_circle;
+    }
+    &__text,
+    &__social {
+        margin-top: 20px;
+        .sidepanel__link {
+            text-decoration: none;
+            margin-right: 25px;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: 45px minmax(110px, auto) 45px;
+        grid-template-columns: repeat(2, 280px);
+        gap: 30px 25px;
+        label {
+            position: absolute;
+            display: block;
+            left: 12px;
+            top: -12px;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-style: 12px;
+            margin-bottom: 0;
+        }
+    }
+    &__triggers {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+    &__policy {
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-size: 12px;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: span 2;
+        textarea {
+            padding: 10px;
+            resize: none;
+            height: 100%;
+            width: 100%;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+    }
+    &__btn {
+        border: none;
+        font-weight: bold;
+        font-style: 14px;
+        line-height: 21px;
+    }
+}

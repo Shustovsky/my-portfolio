@@ -1,0 +1,44 @@
+.price {
+    padding-top: 66px;
+    &__wrapper {
+        margin-top: 45px;
+        display: grid;
+        grid-template: auto / repeat(auto-fill, 370px);
+        grid-auto-rows: 44px;
+        justify-content: space-between;
+        align-content: space-between;
+        column-gap: 20px;
+        row-gap: 15px;
+    }
+    &__column {
+        &-item {
+            display: grid;
+            grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
+            row-gap: 5px;
+            margin: 15px 0 0 20px;
+            p {
+                grid-column: span 2;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                margin-bottom: 0;
+            }
+            h4 {
+                position: relative;
+                &:first-child {
+                    @include before_circle;
+                    &:before {
+                        position: absolute;
+                        left: -23px;
+                        top: 4px;
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                &:nth-child(2) {
+                    justify-self: end;
+                }
+            }
+        }
+    }
+}
