@@ -118,7 +118,13 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="My photo">
+                    <!--  <img srcset="img/main_photo_min.jpg 300w,
+                    img/main_photo.jpg 400w" sizes="(max-width: 576px) 280px, (min-width:577px) 400px" src="img/main_photo.jpg" alt="My photo"> -->
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/main_photo_min.jpg">
+                        <source media="(max-width: 577px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fs16 about__title">Про меня</h2>
@@ -379,7 +385,8 @@
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="img/main_photo.jpg" alt="My photo">
+                     <img srcset="img/main_photo_min.jpg 300w,
+                    img/main_photo.jpg 400w" sizes="(max-width: 576px) 280px, (min-width:577px) 400px" src="img/main_photo.jpg" alt="My photo">
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fs16 contacts__title">Контакты</h2>

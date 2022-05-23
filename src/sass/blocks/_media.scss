@@ -62,9 +62,6 @@
         max-width: 540px;
     }
     .skills {
-        &__wrapper {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
         &__progress {
             padding-top: 50px;
             justify-items: center;

@@ -4,8 +4,9 @@
     &__wrapper {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-template-columns: repeat(auto-fit, 270px);
         grid-auto-flow: dense;
+        justify-content: space-around;
         gap: 13px;
     }
     &__item {
